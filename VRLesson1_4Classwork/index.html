@@ -8,6 +8,20 @@
       <!-- Task 1: Wrap the components below into an entity. "Label" it snowman -->
       <!-- Task 2: Duplicate the snowman to different locations and rotation -->
         <!-- Body -->
+        <-- snowman -->
+       <a-box class="snowman" wireframe="true"
+        <a-sphere position="0 0.5 -0.5" radius="1.25" color="white"></a-sphere>
+        <a-sphere position="0 2.25 -0.5" radius="1" color="white"></a-sphere>
+        <a-sphere position="0 3.5 -0.5" radius=".85" color="white"></a-sphere>
+        <!-- Eyes -->
+        <a-sphere position="-0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <a-sphere position="0.25 3.5 0.25" radius=".15" color="black"></a-sphere>
+        <!-- Nose and Arms -->
+        <a-cone position="0 3.25 0.5"  rotation="90 0 0" color="tomato" height="0.5" radius-bottom=".1" radius-top="0.01"></a-cone>
+        <a-cylinder position="-1.25 2.75 -0.25" color="#A52A2A" rotation="0 0 60" height="2" radius="0.15"></a-cylinder>
+        <a-cylinder position="1.25 2.75 -0.25" color="#A52A2A" rotation="0 0 -60" height="2" radius="0.15"></a-cylinder>
+       </a-box>
+       <a-box class="snowman" wireframe="true" 
         <a-sphere position="0 0.5 -0.5" radius="1.25" color="white"></a-sphere>
         <a-sphere position="0 2.25 -0.5" radius="1.05" color="white"></a-sphere>
         <a-sphere position="0 3.5 -0.5" radius=".85" color="white"></a-sphere>
@@ -18,10 +32,11 @@
         <a-cone position="0 3.25 0.5"  rotation="90 0 0" color="tomato" height="0.5" radius-bottom=".1" radius-top="0.01"></a-cone>
         <a-cylinder position="-1.25 2.75 -0.25" color="#A52A2A" rotation="0 0 60" height="2" radius="0.15"></a-cylinder>
         <a-cylinder position="1.25 2.75 -0.25" color="#A52A2A" rotation="0 0 -60" height="2" radius="0.15"></a-cylinder>
-      
+       </a-box>
 
       <!-- Task 3: Wrap the components below into an entity. "Label" it tree -->
       <!-- Task 4: Duplicate the tree to different locations and rotation -->
+       <-- tree -->
         <!-- Trunk -->
         <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
         <!-- Pines -->

@@ -5,8 +5,10 @@
   </head>
   <body>
     <a-scene>
-      <a-sphere id="sun" position="0 5 -15" color="yellow"></a-sphere>
-
+      <!-- sun -->
+      <a-sphere id="sun" position="0 5 -15" color="yellow" opacity="0"></a-sphere>
+      
+      <!-- pokeball -->
       <a-entity id="pokemonball" position="0 1 -4">
         <a-sphere phi-start="0" radius="0.5" phi-length="180" rotation="-90 0 0" side="double" color="red"></a-sphere>
         <a-sphere phi-start="0" radius="0.5" phi-length="180" rotation="90 0 0" side="double"></a-sphere>
@@ -14,13 +16,15 @@
         <a-cylinder radius="0.1" rotation="90 0 0"></a-cylinder> 
       </a-entity>
 
-      <a-entity id="rocket" position="3 1 -4">
-      <a-cone radius-top="0" radius-bottom="0.5" height="1" color="red" position="0 0 -2"></a-cone>
-      <a-cylinder radius="0.5" height="2" color="gray" position="0 -1.5 -2"></a-cylinder>
-      <a-cone radius-top="0" radius-bottom="0.25" height="2" color="orange" position="0 -3.5 -2" rotation="-180 0 0"></a-cone>
-    </a-entity>
 
-      <!-- Car -->
+      <!-- rocket -->
+      <a-entity id="rocket" position="3 1 -4">
+        <a-cone radius-top="0" radius-bottom="0.5" height="1" color="red" position="0 0 -2"></a-cone>
+        <a-cylinder radius="0.5" height="2" color="gray" position="0 -1.5 -2"></a-cylinder>
+        <a-cone radius-top="0" radius-bottom="0.25" height="2" color="orange" position="0 -3.5 -2" rotation="-180 0 0"></a-cone>
+      </a-entity>
+
+      <!-- car -->
       <a-entity id = "car" rotation="0 90 0" position="0 0 -8">
         <a-box id = "frunk" position="0 0.7 -4" width = "2.5" depth = "1.5" color="cyan"></a-box>
         <a-box id = "trunk" position="0 0.7 -7" width = "2.5" depth = "1.5" color="cyan"></a-box>
@@ -92,6 +96,7 @@
         </a-entity>
       </a-entity>
 
+      <!-- dude -->
       <a-entity id="dude" position="-2 0.85 -10" rotation="0 -45 0">
         <a-sphere position="0 0 0" radius=".5" color="#FF007F"></a-sphere>
         <a-cylinder position="0 0.35 0" radius=".2" height="0.5" color="gray"></a-cylinder>

@@ -9,5 +9,11 @@ window.addEventListener("DOMContentLoaded",function() {
     let z = rnd(-20,20);
     let tree = new Tree(x, 0 , z);
   }
-
+for(let i = 0; i < 50; i++){
+    let x = rnd(-20,20);
+    let z = rnd(-20,20);
+    let  = new Flower(x, 0 , z);
+  }   
+  cloud = new Cloud(0,20,0);
+let cloud = new Cloud(0,20,0);
 })

@@ -13,11 +13,11 @@ class Car {
     body.setAttribute("depth", "6");
     body.setAttribute("height", "5.5");
     body.setAttribute("width", "5");
-    body.setAttribute("color", "darkblue");
+    body.setAttribute("color", "white");
     this.obj.append(body);
 
     let top = document.createElement("a-box");
-    top.setAttribute("color", "#0047AB");
+    top.setAttribute("color", "green");
     top.setAttribute("depth", "5");
     top.setAttribute("height", "1.5");
     top.setAttribute("width", "2.5");
@@ -57,25 +57,25 @@ class Car {
     this.obj.append(wheel4);
 
     let hub1 = document.createElement("a-sphere");
-    hub1.setAttribute("color", "#d9d9d9");
+    hub1.setAttribute("color", "black");
     hub1.setAttribute("radius", ".5");
     hub1.setAttribute("position", "-1.25 0.5 -1");
     this.obj.append(hub1);
 
     let hub2 = document.createElement("a-sphere");
-    hub2.setAttribute("color", "#d9d9d9");
+    hub2.setAttribute("color", "black");
     hub2.setAttribute("radius", ".5");
     hub2.setAttribute("position", "-1.25 0.5 1");
     this.obj.append(hub2);
 
     let hub3 = document.createElement("a-sphere");
-    hub3.setAttribute("color", "#d9d9d9");
+    hub3.setAttribute("color", "black");
     hub3.setAttribute("radius", ".5");
     hub3.setAttribute("position", "1.25 0.5 -1");
     this.obj.append(hub3);
 
     let hub4 = document.createElement("a-sphere");
-    hub4.setAttribute("color", "#d9d9d9");
+    hub4.setAttribute("color", "black");
     hub4.setAttribute("radius", ".5");
     hub4.setAttribute("position", "1.25 0.5 1");
     this.obj.append(hub4);
@@ -99,13 +99,13 @@ class Car {
     this.obj.append(backglass);
 
     let light1 = document.createElement("a-sphere");
-    light1.setAttribute("color", "yellow");
+    light1.setAttribute("color", "white");
     light1.setAttribute("radius", ".4");
     light1.setAttribute("position", ".5 .95 2.50");
     this.obj.append(light1);
 
     let light2 = document.createElement("a-sphere");
-    light2.setAttribute("color", "yellow");
+    light2.setAttribute("color", "white");
     light2.setAttribute("radius", ".4");
     light2.setAttribute("position", "-.5 .95 2.50");
     this.obj.append(light2);

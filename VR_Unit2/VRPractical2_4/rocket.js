@@ -1,3 +1,4 @@
+
 class Rocket{
   constructor(x,y,z){
     this.x = x;
@@ -11,31 +12,24 @@ class Rocket{
     let body = document.createElement("a-cylinder");
     body.setAttribute("radius","1");
     body.setAttribute("height","4.5");
-    body.setAttribute("color", "black");
+    body.setAttribute("color", "red");
     this.obj.append( body );
   
     let head = document.createElement("a-cone");
     head.setAttribute("position","0 3.25 0");
-    head.setAttribute("color", "darkred");
+    head.setAttribute("color", "gray");
     head.setAttribute("radius-bottom","1");
     head.setAttribute("radius-top","0.1");
     head.setAttribute("height","2");
     this.obj.append( head );
 
-    let thruster = document.createElement("a-torus");
-    thruster.setAttribute("position","0 -2.25 0");
-    thruster.setAttribute("radius", "0.75");
-    thruster.setAttribute("radius-tubular", "0.15");
-    thruster.setAttribute("rotation", "90 0 0");
-    thruster.setAttribute("color", "silver");
-    this.obj.append( thruster );
-
-  let flame = document.createElement("a-cone");
+ let flame = document.createElement("a-cone");
   flame.setAttribute("position", "0 -3 0");
   flame.setAttribute("radius-bottom", "0.5");
   flame.setAttribute("radius-top", "0");
   flame.setAttribute("height", "1");
   flame.setAttribute("color", "orange");
+  flame.setAttribute("rotation", "0 180 0");
   this.obj.append(flame);
     
     scene.append(this.obj);
